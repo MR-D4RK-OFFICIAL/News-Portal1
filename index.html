@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Aggregator</title>
+</head>
+<body>
+    <h1>📰 Latest News</h1>
+    <ul>
+        {% for item in news %}
+        <li><a href="{{ item.link }}" target="_blank">{{ item.title }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
